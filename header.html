@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+  .header {
+      position: fixed;
+      z-index: 2;
+      overflow: visible;
+      width: 100%;
+      height: 60px;
+      left: -2px;
+      top: 0px;
+      background-color: #7C5341;
+  }
+  body{
+    margin: 0px;
+  }
+
+  h1 {
+    left: 19px;
+    margin:0;
+    position: absolute;
+    overflow: visible;
+    white-space: normal;
+    text-align: center;
+    font-family: Kristen ITC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(251,250,239,1);
+}
+h4{
+      text-align: center;
+      margin-bottom: 60px;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height:100%;
+    width: 100%;
+    position: absolute;
+    overflow: visible;
+    white-space: normal;
+    color: rgba(251,250,239,1);
+    gap:200px;
+}
+
+#menu_c_i{
+    width:300px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+#reservation{
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+#BOX2{
+  margin-right: 5%;
+}
+
+.img{
+    position: relative;
+    height:30px;
+    width:30px;
+}
+
+.img_header{
+  position:absolute;
+  height:60px;
+  width:60px;
+  z-index: 2;
+}
+
+#img{
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+#Take_out_reservation{
+  position: absolute;
+  font-size: 50px;
+  left: 20px;
+  bottom: 10px;
+  color: rgba(251,250,239,1);
+  letter-spacing:3px;
+}
+
+a#reserve_text{
+    color: rgba(251,250,239,1);
+    text-decoration: none;
+    text-align: center;
+}
+
+#headerPhoto{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px){
+  .header {
+      width:100%;
+      max-width: 480px;
+  }
+
+  body{
+    max-width: 480px;
+  }
+  .menu{
+    
+    gap:30%;
+}
+
+  #menu_c_i{
+    width:20px;
+    gap: 40px;
+}
+
+#reservation{
+    width: 120px;
+    font-size: 20px;
+}
+}
+
+  </style>
+  <meta charset="UTF-8">
+  <title>ヘッダー</title>
+</head>
+<body>
+	   <div class="header">
+        <h1>
+            <a href="http://ws-hackathon2022-teams03.pencilsystems.site/">    
+                <img class="img_header" src="image/logo.png">
+            </a>
+        </h1>
+	   		<div class="menu">
+                <div id="reservation">
+                    <a id="reserve_text" href="show_items.php">Take Out Reservation</a>
+                </div>
+                <div id="menu_c_i">
+                    <div id="BOX1">
+                        <a href="cart.php">
+                            <img class="img" src="image/cart.png" height=30px width=30px>
+                        </a>
+                    </div>
+                    <div id="BOX2">
+                        <a href="https://www.instagram.com/cafekouno/">
+                            <img class="img" src="image/insta.png" height=30px width=30px>
+                        </a>
+                    </div>
+                </div>
+	   		</div>
+	   </div>
+     <div id="img">
+        <img id=headerPhoto src="image/headerPhoto.jpg">
+        <span id="Take_out_reservation">Take Out Reservation</span>
+     </div>
+     <div>
+       <h4>
+         Reservation</br>
+         受取予約
+       </h4>
+</body>
+</html>

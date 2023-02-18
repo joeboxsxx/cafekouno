@@ -1,0 +1,18 @@
+/**
+ * Theme Name:     Lightning Child
+ * Author:         Vektor,Inc.
+ * Template:       lightning.15.2.2/lightning
+ * Text Domain:	   lightning-child
+ * Description:    Lightning is a very simple &amp; easy to customize theme which is based on the Bootstrap. It is also very friendly with custom post types and custom taxonomies. When you add a new one, the breadcrumbs will be adjusted and posts will look beautifully without editing or adding a template files.
+ */
+@media screen and (max-width:480px) {
+	* {
+		float:none;
+		position:static;
+	}
+	img {
+		max-width:100%;
+		height:auto;
+	}
+	
+}

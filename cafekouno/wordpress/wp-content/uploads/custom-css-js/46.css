@@ -1,0 +1,28 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+/* ここにCSSコードを追加
+
+例:
+.example {
+    color: red;
+}
+
+CSS の知識に磨きをかけるためにご覧ください。
+http://www.w3schools.com/css/css_syntax.asp
+
+コメント終わり */ 
+
+wp-block-preformatted{
+	text-align:right;
+}
+slider img {
+    width:300px;/*スライダー内の画像を横幅100%に*/
+    height:300px;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+slider slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}</style>
+<!-- end Simple Custom CSS and JS -->
